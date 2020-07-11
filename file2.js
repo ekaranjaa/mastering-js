@@ -32,6 +32,21 @@ val = fruits.sort() // sort strings in alphabetical order
 val = numbers.sort((x, y) => x - y) // sort numbers in ascending order
 val = numbers.sort((x, y) => y - x) // sort numbers in descending order
 val = numbers.find((num) => num > 50) // find a certain category of numbers
+
 console.log(fruits)
 console.log(numbers)
+
+// Object literals
+const person = {
+    name: 'Emmanuel',
+    age: 19,
+    email: 'emmanuel@me.com',
+    role: 'Developer',
+    hobbies: ['sports', 'dancing']
+}
+
+val = person
+val = person.name
+val = person['age']
+val = person.hobbies
 console.log(val)
