@@ -1,8 +1,3 @@
-// The document object
-let val = document
-
-console.log(val)
-
 // DOM selectors
 /*
     - You can select DOM elements using classLists,
@@ -18,18 +13,19 @@ console.log(val)
     you can loop through while NodeLists dont and while using
     a for loop you can loop through both.
 */
-
-let elements = document.getElementsByTagName('h1')
+let elements
+elements = document.getElementsByTagName('li')
 elements = Array.from(elements) // Required
 elements.forEach(element => element.style.color = 'red')
 
-let element = document.querySelectorAll('h1')
-elements.forEach(element => element.style.color = 'red')
+elements = document.querySelectorAll('li')
+elements.forEach(element => element.style.color = 'blue')
 
 /*
     - It is possible to use css selectors with querySelector()
 */
-let oddElements = document.querySelectorAll('h1:nth-child(odd)')
-oddElements.forEach(element => element.style.color = 'blue')
+let oddElements = document.querySelectorAll('li:nth-child(odd)')
+oddElements.forEach(element => element.style.background = '#ddd')
 
-console.log(elements)
+let evenElements = document.querySelectorAll('li:nth-child(even)')
+evenElements.forEach(element => element.style.background = '#f4f4f4')
