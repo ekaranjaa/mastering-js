@@ -4,6 +4,12 @@ const clearBtn = document.querySelector('.clear-tasks')
 
 // Mouse events
 // clearBtn.addEventListener('click', e => {
+/*
+    - preventDefalt() prevents the default action
+    of an element from happeinig. For instance, it
+    will stop a form submision from reloading the
+    page.
+*/
 //     e.preventDefault()
 // })
 
@@ -51,8 +57,30 @@ const clearBtn = document.querySelector('.clear-tasks')
 
 // Keyboard events
 
+const form = document.querySelector('form')
+const taskInput = document.getElementById('task')
 
+taskInput.value = ''
+
+// form.addEventListener('submit', keyboardEvent)
+// taskInput.addEventListener('keydown', keyboardEvent)
+// taskInput.addEventListener('keyup', keyboardEvent)
+// taskInput.addEventListener('keypress', keyboardEvent)
+// taskInput.addEventListener('focus', keyboardEvent)
+// taskInput.addEventListener('blur', keyboardEvent)
+// taskInput.addEventListener('cut', keyboardEvent)
+// taskInput.addEventListener('paste', keyboardEvent)
+/*
+    - The input event fires on every action taken in
+    the input field except focus and blur.
+*/
+taskInput.addEventListener('input', keyboardEvent)
 
 function keyboardEvent(e) {
+    // e.preventDefault() 
+
     console.log(`Event type: ${e.type}`)
+    // console.log(e.target.value)
+
+    // cardTitle.innerText = taskInput.value
 }
