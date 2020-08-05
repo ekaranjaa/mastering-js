@@ -35,4 +35,4 @@ document.querySelector('form').addEventListener('submit', (e) => {
 })
 
 const tasks = JSON.parse(localStorage.getItem('tasks'))
-console.log(tasks)
+// console.log(tasks)

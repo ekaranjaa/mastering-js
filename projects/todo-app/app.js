@@ -53,7 +53,6 @@ function addTask(e) {
         alert('Add a task')
     }
 
-
     const li = document.createElement('li')
 
     li.className = 'collection-item'
@@ -68,12 +67,9 @@ function addTask(e) {
 
     li.appendChild(link)
 
-
     taskList.appendChild(li)
 
-
     storeTaskInLocalStorage(taskInput.value)
-
 
     taskInput.value = ''
 
@@ -97,7 +93,6 @@ function removeTask(e) {
     if (e.target.parentElement.classList.contains('delete-item')) {
         if (confirm('Are You Sure?')) {
             e.target.parentElement.parentElement.remove()
-
 
             removeTaskFromLocalStorage(e.target.parentElement.parentElement)
         }
