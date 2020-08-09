@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API Library</title>
+
+    <style>
+        body {
+            font-family: 'sans-serif';
+            background: rgb(30, 0, 99);
+            color: #fff;
+        }
+
+        .btn {
+            margin: 5px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            color: #fff;
+            text-shadow: 1px 1px #000;
+            background: linear-gradient(#333, #000);
+            box-shadow: 0 0 5px #000;
+            cursor: pointer;
+            outline: none;
+            transition: .05s ease-in-out;
+        }
+
+        .btn:active,
+        .btn:focus {
+            transform: scale(.95);
+            box-shadow: none;
+        }
+
+        .btn.create {
+            background: linear-gradient(rgb(0, 4, 255), rgb(0, 3, 180));
+        }
+
+        .btn.read {
+            background: linear-gradient(rgb(24, 209, 0), rgb(18, 151, 0));
+        }
+
+        .btn.update {
+            background: linear-gradient(rgb(255, 136, 0), rgb(194, 103, 0));
+        }
+
+        .btn.delete {
+            background: linear-gradient(rgb(255, 0, 0), rgb(214, 0, 0));
+        }
+
+        .output {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            /* color: rgb(0, 138, 0); */
+            box-shadow: 0 0 5px #ccc;
+            overflow: auto;
+        }
+
+        .output::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>REST API Library</h1>
+    <button class="btn create">Create new user</button>
+    <button class="btn read">Fetch users</button>
+    <button class="btn update">Update user</button>
+    <button class="btn trash">Trash user</button>
+    <button class="btn restore">Restore user</button>
+    <button class="btn delete">Delete user</button>
+
+    <div class="output"></div>
+
+    <script src="./library.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

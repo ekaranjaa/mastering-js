@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn {
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            background: linear-gradient(#eee, #ccc);
+            box-shadow: 0 0 5px #ccc;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .btn.get {
+            color: #fff;
+            background: linear-gradient(rgb(171, 62, 235), rgb(141, 8, 218));
+        }
+
+        ul {
+            list-style-type: circle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn get">LOAD CUSTOMERS</button>
+    <button class="btn reload">RELOAD</button>
+
+    <h1>Customers</h1>
+    <div class="output"></div>
+
+    <script src="./xhr-object.js"></script>
+</body>
+
+</html>

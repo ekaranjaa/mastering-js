@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Emmanuel",
+        "age": "19",
+        "department": "Digital",
+        "phone": "0712345678"
+    },
+    {
+        "id": 2,
+        "name": "Brian",
+        "age": "19",
+        "department": "Marketting",
+        "phone": "0712345678"
+    },
+    {
+        "id": 3,
+        "name": "Darren",
+        "age": "17",
+        "department": "Design",
+        "phone": "0712345678"
+    }
+]
