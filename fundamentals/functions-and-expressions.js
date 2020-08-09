@@ -3,6 +3,11 @@ function greetings(name = 'Emmanuel') {
     return `Hello ${name}`
 }
 
+// Arrow functions
+/*
+    - Note that arrow functions use lexical `this` which
+    refers to its current surroundings and no further.
+*/
 const square = (x) => {
     return Math.pow(x, 2)
 }

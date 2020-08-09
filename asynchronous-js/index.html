@@ -11,15 +11,23 @@
             padding: 10px 20px;
             border-radius: 25px;
             border: none;
+            color: #fff;
             background: linear-gradient(#eee, #ccc);
             box-shadow: 0 0 5px #ccc;
             cursor: pointer;
             outline: none;
         }
 
-        .btn.get {
-            color: #fff;
+        .btn.text {
             background: linear-gradient(rgb(171, 62, 235), rgb(141, 8, 218));
+        }
+
+        .btn.json {
+            background: linear-gradient(rgb(62, 151, 235), rgb(8, 117, 218));
+        }
+
+        .btn.api {
+            background: linear-gradient(rgb(235, 62, 76), rgb(218, 8, 43));
         }
 
         ul {
@@ -30,13 +38,14 @@
 
 <body>
 
-    <button class="btn get">LOAD CUSTOMERS</button>
-    <button class="btn reload">RELOAD</button>
+    <button class="btn text">Load txt file</button>
+    <button class="btn json">Load local JSON</button>
+    <button class="btn api">Load API data</button>
 
-    <h1>Customers</h1>
+    <h1>Fetch API</h1>
     <div class="output"></div>
 
-    <script src="./xhr-object.js"></script>
+    <script src="./fetch-api.js"></script>
 </body>
 
 </html>

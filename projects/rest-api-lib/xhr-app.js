@@ -61,7 +61,7 @@ updateBtn.onclick = () => {
     })
 }
 
-// Trash user / Soft delete
+// Soft delete user 
 trashBtn.onclick = () => {
     http.delete('http://qdc.api/api/trash/user/ekaranja', function (err, user) {
         if (!err) {
@@ -83,7 +83,7 @@ restoreBtn.onclick = () => {
     })
 }
 
-// Delete user
+// Permanently delete user
 deleteBtn.onclick = () => {
     http.delete('http://qdc.api/api/destroy/user/ekaranja', function (err, user) {
         if (!err) {
