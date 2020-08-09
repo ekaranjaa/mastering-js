@@ -48,7 +48,7 @@ createBtn.onclick = () => {
 
 // Update user
 const updatedUser = {
-    name: 'Emmanuel Karanja',
+    name: 'Karanja Emmanuel',
     password: '654321'
 }
 updateBtn.onclick = () => {

@@ -53,7 +53,7 @@ easyHttp.prototype.delete = function (url, callback) {
 
     const self = this
     this.http.onload = function () {
-        callback(null, self.http.responseText)
+        callback(null, 'User deleted')
     }
 
     this.http.send()
