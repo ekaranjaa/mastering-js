@@ -1,5 +1,4 @@
-document.querySelector('.get').onclick = loadData
-document.querySelector('.reload').onclick = () => location.reload()
+document.querySelector('.btn.json').onclick = loadData
 
 function loadData() {
     const xhr = new XMLHttpRequest
